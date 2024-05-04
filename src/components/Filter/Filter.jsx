@@ -1,5 +1,6 @@
 import React from 'react'
 import './Filter.scss'
+import second from '../../../public/search.png'
 export default function Filter() {
   return <>
 
@@ -35,7 +36,7 @@ export default function Filter() {
    <input placeholder='any' type="text" name="bedroom"  id="" />     </div>
   
    <button>
-          <img src="/search.png" alt="" />
+          <img src={search} alt="" />
       </button>
 
 

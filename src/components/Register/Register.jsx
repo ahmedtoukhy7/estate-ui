@@ -1,5 +1,6 @@
 import React from 'react'
 import './Register.scss'
+import bg from '../../../public/bg.png'
 import { Link } from 'react-router-dom'
 export default function Register() {
   return <>
@@ -16,7 +17,7 @@ export default function Register() {
             <Link to='/login'>Do yo have account</Link>
     </div>
     <div className='image'>
-    <img src="/bg.png" alt="" />
+    <img src={bg} alt="" />
     </div>
   </div>
   

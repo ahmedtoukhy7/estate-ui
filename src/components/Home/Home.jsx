@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.scss'
+import bg from '../../../public/bg.png'
 import Searchbar from '../Searchbar/Searchbar'
 export default function Home() {
 
@@ -37,7 +38,7 @@ export default function Home() {
         
     </div>
     <div className='image'>
-    <img src="/bg.png" alt="" />
+    <img src={bg} alt="" />
     </div>
   </div>
 

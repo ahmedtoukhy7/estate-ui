@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.scss'
+import logo from '../../../public/logo.png'
+import menu from '../../../public/menu.png'
 export default function Navbar() {
   const [show,setShow]=useState(false)
   return <>
@@ -7,7 +9,7 @@ export default function Navbar() {
   <nav>
     <div className='left'>
       <div className='logo'>
-        <img src="../../../public/logo.png" alt="logo" />
+        <img src={logo} alt="logo" />
         <h3>RealEstate</h3>
       </div>
       <div className='links'>
@@ -35,7 +37,7 @@ export default function Navbar() {
       <div onClick={()=>{
         setShow(true)
       }} className='menuicon'>
-        <img src="/menu.png" alt="menu" />
+        <img src={menu} alt="menu" />
       </div>
       <div className={show ? 'sidebar active' : 'sidebar'}>
 

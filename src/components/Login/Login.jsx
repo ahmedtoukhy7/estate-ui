@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Login.scss'
+import bg from '../../../public/bg.png'
 export default function Login() {
   return <div className='login'>
   <div className='form'>
@@ -14,7 +15,7 @@ export default function Login() {
           <Link to='/register'>create account</Link>
   </div>
   <div className='image'>
-  <img src="/bg.png" alt="" />
+  <img src={bg} alt="" />
   </div>
 </div>
 }
