@@ -10,7 +10,7 @@ export default function SinglePage() {
 
   <div className='single'>
     <div className='left'>
-      <h1>ahmed</h1>
+      
 
       <Slider/>
 
@@ -25,7 +25,7 @@ export default function SinglePage() {
         <p className='price'>1500</p>
        </div>
        <div className='user'>
-       <img src='/public/logo.png' alt="" />
+       <img src='/logo.png' alt="" />
                 <h5>ahmed</h5>
        </div>
        </div>
