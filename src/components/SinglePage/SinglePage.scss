@@ -1,0 +1,159 @@
+@import '../../responsive.scss';
+.single{
+    display: flex;
+    gap: 30px;
+    .left{
+        width: 60%;
+       .text{
+        margin-top: 20px;
+        .cont{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .user{
+            background-color: rgba(255, 166, 0, 0.498);
+            padding: 20px 50px;
+            width: fit-content;
+            img{
+                width: 40px;
+            }
+        }
+        h2{
+            font-size: 23px;
+        }
+        .address{
+            margin: 15px 0;
+            color: #777;
+            font-size: 19px;
+            img{
+                width: 15px;
+                margin-right: 9px;
+            }
+        }
+        .price {
+            padding: 5px;
+            background-color: rgba(254, 205, 81, 0.438);
+            border-radius: 5px;
+            width: max-content;
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 15px;
+          }
+       }
+    }
+    .features {
+        width: 40%;
+        background-color: #fcf5f3;
+        height: 100%;
+        overflow-y: scroll;
+    
+        @include md {
+          flex: none;
+          height: max-content;
+          margin-bottom: 50px;
+        }
+    
+        .wrapper {
+          padding: 0px 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+    
+          @include md {
+            padding: 20px;
+          }
+    
+          img {
+            width: 24px;
+            height: 24px;
+          }
+    
+          .title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+    
+          .feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+            img {
+              background-color: rgba(254, 205, 81, 0.209);
+            }
+    
+            .featureText {
+              span {
+                font-weight: bold;
+              }
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+    
+          .listVertical {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 10px;
+            background-color: white;
+            border-radius: 10px;
+          }
+          .listHorizontal {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10px;
+            background-color: white;
+            border-radius: 10px;
+          }
+    
+          .sizes {
+            display: flex;
+            justify-content: space-between;
+    
+            @include lg {
+              font-size: 12px;
+            }
+    
+            .size {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              background-color: white;
+              padding: 10px;
+              border-radius: 5px;
+            }
+          }
+    
+          .mapContainer {
+            width: 100%;
+            height: 200px;
+          }
+    
+          .buttons {
+            display: flex;
+            justify-content: space-between;
+    
+            button {
+              padding: 20px;
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              background-color: white;
+              border: 1px solid #fece51;
+              border-radius: 5px;
+              cursor: pointer;
+    
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+}
