@@ -9,7 +9,7 @@ import Login from "./components/Login/Login";
 
 function App() {
 
-  const routes =createHashRouter([
+  const routes =createBrowserRouter([
     { path:'/', element: <Layout/> , children : [
       {index :true , element : <Home/>},
       {path : '/list', element:<ListPage/>},
